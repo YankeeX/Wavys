@@ -5,8 +5,8 @@
 [![](https://img.shields.io/discord/761541041152983050.svg?logo=discord&colorB=7289DA)](https://discord.gg/TFEDuCBXKr)
 [![](https://img.shields.io/badge/paypal-donate-blue.svg)](https://paypal.me/YankeeExe)
 
-> Ce bot est le bot officiel du serveur Café des Devs.
-Wavys est un bot Discord codé en Python avec [Nextcord](https://discord.js.org) par Yankee et HarganFire
+
+> Ce bot est le bot officiel du serveur Café des Devs. Wavys est un bot Discord codé en Python avec [Nextcord](https://discord.js.org) par Yankee et HarganFire
 ## Informations
 
 ### Bot complet
