@@ -1,4 +1,4 @@
-<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="ZetaBot" src="https://cdn.discordapp.com/attachments/826802756739137546/829046002174525470/circle-cropped_7.png">  
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="ZetaBot" src="https://cdn.discordapp.com/attachments/935235554415628302/935246045569511474/Frame_1889.png">  
 
 # Wavys
 
