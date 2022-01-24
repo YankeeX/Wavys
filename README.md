@@ -7,7 +7,8 @@
 
 
 
-> Ce bot est le bot officiel du serveur Café des Devs. Wavys est un bot Discord codé en Python avec [Nextcord](https://discord.js.org) par Yankee et HarganFire
+> Ce bot est le bot officiel du serveur Café des Devs.
+> Wavys est un bot Discord codé en Python avec [Nextcord](https://discord.js.org) par Yankee et HarganFire
 ## Informations
 
 ### Bot complet
