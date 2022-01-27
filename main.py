@@ -3,13 +3,24 @@ from nextcord.ext import commands
 import os
 import asyncio
 import random
-
+from nextcord import Intents
 import json
 
 with open("config.json", "r") as config:
     config = json.load(config)
 
-client = commands.Bot(command_prefix='!')
+prefix = config['prefix']
+
+intents = nextcord.Intents().default()
+intents.members = True
+intents.guilds = True
+intents.messages = True
+intents.voice_states = True
+intents.presences = True
+intents.reactions = True
+intents.guild_reactions = True
+
+client = commands.Bot(command_prefix=prefix, intents=intents)
 client.remove_command("help")
 
 
@@ -73,5 +84,9 @@ for filename in os.listdir('./cogs/utils'):
 for filename in os.listdir('./cogs/mod'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.mod.{filename[:-3]}')
+
+for filename in os.listdir('./cogs/event'):
+    if filename.endswith('.py'):
+        client.load_extension(f'cogs.event.{filename[:-3]}')
 
 client.run(config["token"])
