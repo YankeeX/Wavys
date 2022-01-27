@@ -16,7 +16,7 @@ class AddRole(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name="role-add")
+    @commands.command(name="role-add", usage="<@role> <@membre>", aliases=["addrole", "add-role", "add-r", "role-a", "r-a", "r-add"])
     @commands.has_permissions(manage_roles=True)
     async def role(self, ctx, role: nextcord.Role, member: nextcord.Member = None):
 

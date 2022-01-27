@@ -16,7 +16,7 @@ class Mute(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name="mute")
+    @commands.command(name="mute", usage="<@user> <raison>")
     @commands.has_permissions(manage_roles=True)
     async def mute(self, ctx, member: nextcord.Member, *, reason="Aucune raison n'a été renseignée"):
         async def cRoleMute(ctx):

@@ -11,6 +11,7 @@ from main import client, c_em_b, c_em_e, c_em_s
 class Purge(commands.Cog):
     def __init__(self, client):
         self.client = client
+
     @commands.command()
     @commands.has_permissions(manage_messages=True)
     async def purge(self, ctx):
@@ -43,7 +44,6 @@ class Purge(commands.Cog):
             )
 
         await new_channel.send('Channel Clear')
-
 
 
 def setup(client):

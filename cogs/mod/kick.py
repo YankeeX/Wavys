@@ -13,7 +13,7 @@ class Kick(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command()
+    @commands.command(name="kick", usage="<@user> <raison>")
     @commands.has_permissions(kick_members=True)
     async def kick(self, ctx, user: nextcord.User, *, reason="Aucune raison renseignée"):
         await ctx.guild.kick(user=user, reason=reason)

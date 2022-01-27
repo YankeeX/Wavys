@@ -12,7 +12,7 @@ class MassRoleRem(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name="massrole-remove", aliases=["mr-remove"])
+    @commands.command(name="massrole-remove", aliases=["mr-remove"], usage="<@role>")
     @commands.has_permissions(administrator=True)
     async def massrolerem(self, ctx, role: nextcord.Role):
         for member in ctx.guild.members:

@@ -12,7 +12,7 @@ from main import client, c_em_b, c_em_e, c_em_s
 class Clear(commands.Cog):
     def __init__(self, client):
         self.client = client
-    @commands.command()
+    @commands.command(name="clear", usage="<nombre>")
     @commands.has_permissions(manage_messages=True)
     async def clear(self, ctx, number: int):
 

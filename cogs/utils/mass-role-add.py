@@ -14,7 +14,7 @@ class MassRoleAdd(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name="massrole-add", aliases=["mr-add"])
+    @commands.command(name="massrole-add", aliases=["mr-add"], usage="<@role>")
     @commands.has_permissions(administrator=True)
     async def massrole(self, ctx, role: nextcord.Role):
         guild = ctx.guild

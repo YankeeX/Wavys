@@ -16,7 +16,8 @@ class RemRole(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name="role-remove")
+    @commands.command(name="role-remove", usage="<@role> <@membre>", aliases=["removerole", "remove-role", "remove-r",
+                                                                              "rr","r-r", "r-remove", "r-rem"])
     @commands.has_permissions(manage_roles=True)
     async def role(self, ctx, role: nextcord.Role, member: nextcord.Member = None):
 

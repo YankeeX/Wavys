@@ -12,7 +12,7 @@ class Unban(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name='unban', description='Permet de débannir la personne visée')
+    @commands.command(name='unban', description='Permet de débannir la personne visée', usage="<user#1234> <raison>")
     @commands.has_permissions(ban_members=True)
     async def unban(self, ctx, user, *, reason="Aucune raison renseignée"):
 

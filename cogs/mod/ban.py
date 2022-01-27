@@ -14,7 +14,7 @@ class Ban(commands.Cog):
         self.client = client
         self.category = 'moderation'
 
-    @commands.command()
+    @commands.command(name="ban", usage='<@user> <raison>')
     @commands.has_permissions(ban_members=True)
     async def ban(self, ctx, user: nextcord.User, *, reason="Aucune raison renseignée"):
         await ctx.guild.ban(user, reason=reason)

@@ -15,7 +15,7 @@ class UnMute(commands.Cog):
     def __init__(self, client):
         self.client = client
 
-    @commands.command(name="unmute")
+    @commands.command(name="unmute", usage="<@user> <raison>")
     @commands.has_permissions(manage_roles=True)
     async def unmute(self, ctx, member: nextcord.Member, *, reason="Aucune raison n'a été renseignée"):
 
