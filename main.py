@@ -46,7 +46,7 @@ async def ch_pr():
 
     while not client.is_closed():
         await client.change_presence(
-            activity=nextcord.Activity(type=nextcord.ActivityType.playing, name=f"regarder son écran"))
+            activity=nextcord.Activity(type=nextcord.ActivityType.watching, name=f"son écran"))
 
         await asyncio.sleep(30)
 
